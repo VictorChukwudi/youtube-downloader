@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+ <%- include('./partials/head') %> 
+
+  <body class="bg-light">
+    <div class="container mt-5 p-3">
+      <%- include('./partials/body-header') %> 
+      
+<div class="container">
+        <form action="/" method="post" class="row mt-5 align-items-center w-75 mx-auto">
+          <div class="col-md-9 col-sm-12 mb-3">
+          <label for="url" class="form-label font-bold"> Enter or Paste Video Link</label>
+          <input
+            type="url"
+            class="form-control"
+            id="url"
+            name="url"
+            placeholder="video link or url e.g  https://www.youtube.com/watch?v=p2t44VJD8Co"
+          />
+        </div>
+        <button type="submit" class="col-md-3 col-sm-3  mt-md-3 ms-md-auto ms-sm-3 btn btn-primary">submit</button>
+        </form>
+        <%- include('./partials/mid-body') %> 
+</div>
+<%- include('./partials/footer') %> 
+  </body>
+</html>
