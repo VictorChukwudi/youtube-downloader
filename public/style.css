@@ -10,3 +10,20 @@
 :-ms-input-placeholder {
   font-style: italic;
 }
+
+@media screen and (max-width: 576px) {
+  #submitButton {
+    width: 20vw;
+    margin-left: 12px;
+  }
+  #instruction {
+    height: 68vh;
+    width: 85vw;
+  }
+
+  #frame {
+    height: 10vh;
+    width: 50vw;
+    padding-top: 68%;
+  }
+}

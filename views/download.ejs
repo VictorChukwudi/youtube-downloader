@@ -6,22 +6,21 @@
        <%- include('./partials/body-header') %> 
 
       
-      <div class="row  mt-5 mx-auto d-flex justify-content-evenly">
+      <div class="row gx-0 mt-5 mx-auto d-flex justify-content-evenly container-fluid mb-5">
       
 
 <% if (quality.length > 0) { %>
- <div class="col-7 w-50 ratio ratio-21x9 ">
+ <div class="col-9 w-50 ratio ratio-21x9 mb-5" id="frame">
   <iframe src="https://www.youtube.com/embed/<%=id %>" title="YouTube video"  class="border border-5 border-black"></iframe>
  </div>
 
- <div class="col-5 dropdown mt-0">
+ <div class="col-3 dropdown mt-0" id="dropd">
 <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Choose Download Format
+    Choose Quality
   </button>
   <ul class="dropdown-menu">
 <% quality.forEach(item => { %>
  <li><a class="dropdown-item" href=" <%=item.url%>  "> <%= item.label %>  </a></li>
-
 <% }) %>
  </div>
 <% } %>
